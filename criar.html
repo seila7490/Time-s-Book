@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Projeto-Criar Conta</title>
+  <link rel="stylesheet" href="criar.css" />
+  <link rel="preconnect" href="poppins.css" />
+  <link rel="shortcut icon" type="image/jpg"
+    href="https://media.discordapp.net/attachments/1343947890464260096/1379439192349741106/image.png?ex=68403e5c&is=683eecdc&hm=7248214fb875f44f350a5a361b0debb9a4209aba9882c1bcf70592573542da36&=&format=webp&quality=lossless&width=291&height=65" />
+  <style>
+    a.language-link {
+      cursor: pointer;
+      color: blue;
+      text-decoration: underline;
+      margin-right: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="cadastrese-container">
+    <img
+      src="https://media.discordapp.net/attachments/1343947890464260096/1379439192349741106/image.png?ex=68403e5c&is=683eecdc&hm=7248214fb875f44f350a5a361b0debb9a4209aba9882c1bcf70592573542da36&=&format=webp&quality=lossless&width=291&height=65"
+      width="300"
+      height="70"
+      alt="foto"
+    />
+    <form id="loginForm" method="post" action="#">
+      <h2 id="tituloForm">Cadastrar-se</h2>
+
+      <input type="text" id="nome" name="nome" required /><br /><br />
+      <input type="text" id="usuario" name="usuario" required /><br /><br />
+      <input type="password" id="senha" name="senha" required /><br /><br />
+      <input type="password" id="confirmar" name="confirmar" required /><br /><br />
+      <input type="date" id="data_nascimento" name="data_nascimento" />
+
+      <select name="problema" id="problema" required>
+        <option id="optNaoSelecionado"></option>
+        <option id="optMasculino"></option>
+        <option id="optFeminino"></option>
+        <option id="optNaoBinario"></option>
+        <option id="optTransMasc"></option>
+        <option id="optTransFem"></option>
+        <option id="optGeneroFluido"></option>
+        <option id="optAgenero"></option>
+        <option id="optBigenero"></option>
+        <option id="optDemigenero"></option>
+        <option id="optGeneroQueer"></option>
+        <option id="optIntersexo"></option>
+        <option id="optOutro"></option>
+      </select>
+
+      <div class="concordar">
+        <input type="checkbox" id="checkTermos" />
+        <h6 id="textoTermos">
+          Ao clicar em Cadastre-se, você concorda com nossos Termos, Política de Privacidade e Política de Cookies. Você poderá receber notificações por SMS e
+          cancelar isso quando quiser.
+        </h6>
+      </div>
+
+      <div class="irlogin">
+        <h4 id="jaConta">Já possui uma conta?</h4>
+        <a href="login.html"><button type="button" id="btnLogin">Login</button></a>
+      </div>
+
+      <button type="submit" id="btnEntrar">Entrar</button>
+    </form>
+  </div>
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-idioma">
+        <h4>Idiomas</h4>
+        <ul style="list-style:none; padding-left: 0;">
+          <li><a class="language-link" data-lang="pt" >Português (Brasil)</a></li>
+          <li><a class="language-link" data-lang="en" >English (US)</a></li>
+          <li><a class="language-link" data-lang="es" >Español</a></li>
+          <li><a class="language-link" data-lang="fr" >Français (France)</a></li>
+          <li><a class="language-link" data-lang="it" >Italiano</a></li>
+          <li><a class="language-link" data-lang="de" >Deutsch</a></li>
+        </ul>
+      </div>
+      <div class="footer-coluna">
+        <h4 id="contatoTitulo">Contato</h4>
+        <ul>
+          <li><a href="#" id="emailLink">E-mail</a></li>
+          <li><a href="#" id="suporteLink">Suporte</a></li>
+          <li><a href="#" id="ajudaLink">Ajuda</a></li>
+        </ul>
+      </div>
+      <div class="footer-coluna">
+        <h4 id="politicaTitulo">Políticas</h4>
+        <ul>
+          <li><a href="#" id="privacidadeLink">Privacidade</a></li>
+          <li><a href="#" id="cookiesLink">Cookies</a></li>
+          <li><a href="#" id="termosLink">Termos de Uso</a></li>
+        </ul>
+      </div>
+      <div class="footer-coluna">
+        <h4 id="empresaTitulo">Empresa</h4>
+        <ul>
+          <li><a href="#" id="sobreLink">Sobre Nós</a></li>
+          <li><a href="#" id="trabalheLink">Trabalhe Conosco</a></li>
+          <li><a href="#" id="canalLink">Canal Confidencial</a></li>
+        </ul>
+      </div>
+      <div class="footer-coluna">
+        <h4 id="outrosTitulo">Outros</h4>
+        <ul>
+          <li><a href="#" id="relatoriosLink">Relatórios</a></li>
+          <li><a href="#" id="cuponsLink">Cupons</a></li>
+          <li><a href="#" id="regulamentosLink">Regulamentos</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const traducoes = {
+      pt: {
+        tituloForm: "Cadastrar-se",
+        placeholders: {
+          nome: "Usuário",
+          usuario: "E-mail",
+          senha: "Senha",
+          confirmar: "Confirmar Senha"
+        },
+        selectOptions: [
+          "Não Selecionado",
+          "Masculino",
+          "Feminino",
+          "Não Binário",
+          "Transgênero Masculino",
+          "Transgênero Feminino",
+          "Gênero Fluido",
+          "Agênero",
+          "Bigênero",
+          "Demigênero",
+          "Gênero Queer",
+          "Intersexo",
+          "Outro"
+        ],
+        textoTermos:
+          "Ao clicar em Cadastre-se, você concorda com nossos Termos, Política de Privacidade e Política de Cookies. Você poderá receber notificações por SMS e cancelar isso quando quiser.",
+        jaConta: "Já possui uma conta?",
+        btnLogin: "Login",
+        btnEntrar: "Entrar",
+        contatoTitulo: "Contato",
+        emailLink: "E-mail",
+        suporteLink: "Suporte",
+        ajudaLink: "Ajuda",
+        politicaTitulo: "Políticas",
+        privacidadeLink: "Privacidade",
+        cookiesLink: "Cookies",
+        termosLink: "Termos de Uso",
+        empresaTitulo: "Empresa",
+        sobreLink: "Sobre Nós",
+        trabalheLink: "Trabalhe Conosco",
+        canalLink: "Canal Confidencial",
+        outrosTitulo: "Outros",
+        relatoriosLink: "Relatórios",
+        cuponsLink: "Cupons",
+        regulamentosLink: "Regulamentos"
+      },
+      en: {
+        tituloForm: "Sign Up",
+        placeholders: {
+          nome: "Username",
+          usuario: "Email",
+          senha: "Password",
+          confirmar: "Confirm Password"
+        },
+        selectOptions: [
+          "Not Selected",
+          "Male",
+          "Female",
+          "Non-binary",
+          "Transgender Male",
+          "Transgender Female",
+          "Gender Fluid",
+          "Agender",
+          "Bigender",
+          "Demigender",
+          "Genderqueer",
+          "Intersex",
+          "Other"
+        ],
+        textoTermos:
+          "By clicking Sign Up, you agree to our Terms, Privacy Policy, and Cookie Policy. You may receive SMS notifications and can unsubscribe anytime.",
+        jaConta: "Already have an account?",
+        btnLogin: "Login",
+        btnEntrar: "Register",
+        contatoTitulo: "Contact",
+        emailLink: "Email",
+        suporteLink: "Support",
+        ajudaLink: "Help",
+        politicaTitulo: "Policies",
+        privacidadeLink: "Privacy",
+        cookiesLink: "Cookies",
+        termosLink: "Terms of Use",
+        empresaTitulo: "Company",
+        sobreLink: "About Us",
+        trabalheLink: "Careers",
+        canalLink: "Confidential Channel",
+        outrosTitulo: "Others",
+        relatoriosLink: "Reports",
+        cuponsLink: "Coupons",
+        regulamentosLink: "Regulations"
+      },
+      es: {
+        tituloForm: "Registrarse",
+        placeholders: {
+          nome: "Usuario",
+          usuario: "Correo electrónico",
+          senha: "Contraseña",
+          confirmar: "Confirmar Contraseña"
+        },
+        selectOptions: [
+          "No Seleccionado",
+          "Masculino",
+          "Femenino",
+          "No binario",
+          "Transgénero masculino",
+          "Transgénero femenino",
+          "Género fluido",
+          "Agénero",
+          "Bigénero",
+          "Demigénero",
+          "Género queer",
+          "Intersexual",
+          "Otro"
+        ],
+        textoTermos:
+          "Al hacer clic en Registrarse, acepta nuestros Términos, Política de Privacidad y Política de Cookies. Puede recibir notificaciones por SMS y cancelar en cualquier momento.",
+        jaConta: "¿Ya tienes una cuenta?",
+        btnLogin: "Iniciar sesión",
+        btnEntrar: "Registrar",
+        contatoTitulo: "Contacto",
+        emailLink: "Correo electrónico",
+        suporteLink: "Soporte",
+        ajudaLink: "Ayuda",
+        politicaTitulo: "Políticas",
+        privacidadeLink: "Privacidad",
+        cookiesLink: "Cookies",
+        termosLink: "Términos de uso",
+        empresaTitulo: "Empresa",
+        sobreLink: "Sobre nosotros",
+        trabalheLink: "Trabaja con nosotros",
+        canalLink: "Canal confidencial",
+        outrosTitulo: "Otros",
+        relatoriosLink: "Informes",
+        cuponsLink: "Cupones",
+        regulamentosLink: "Reglamentos"
+      },
+      fr: {
+        tituloForm: "S'inscrire",
+        placeholders: {
+          nome: "Nom d'utilisateur",
+          usuario: "E-mail",
+          senha: "Mot de passe",
+          confirmar: "Confirmer le mot de passe"
+        },
+        selectOptions: [
+          "Non sélectionné",
+          "Masculin",
+          "Féminin",
+          "Non binaire",
+          "Transgenre masculin",
+          "Transgenre féminin",
+          "Genre fluide",
+          "Agenre",
+          "Bigendre",
+          "Demigenre",
+          "Genre queer",
+          "Intersexe",
+          "Autre"
+        ],
+        textoTermos:
+          "En cliquant sur S'inscrire, vous acceptez nos Conditions, Politique de confidentialité et Politique de cookies. Vous pouvez recevoir des notifications SMS et vous désabonner à tout moment.",
+        jaConta: "Vous avez déjà un compte ?",
+        btnLogin: "Connexion",
+        btnEntrar: "S'inscrire",
+        contatoTitulo: "Contact",
+        emailLink: "E-mail",
+        suporteLink: "Support",
+        ajudaLink: "Aide",
+        politicaTitulo: "Politiques",
+        privacidadeLink: "Confidentialité",
+        cookiesLink: "Cookies",
+        termosLink: "Conditions d'utilisation",
+        empresaTitulo: "Entreprise",
+        sobreLink: "À propos de nous",
+        trabalheLink: "Rejoignez-nous",
+        canalLink: "Canal confidentiel",
+        outrosTitulo: "Autres",
+        relatoriosLink: "Rapports",
+        cuponsLink: "Coupons",
+        regulamentosLink: "Règlements"
+      },
+      it: {
+        tituloForm: "Registrati",
+        placeholders: {
+          nome: "Nome utente",
+          usuario: "Email",
+          senha: "Password",
+          confirmar: "Conferma password"
+        },
+        selectOptions: [
+          "Non selezionato",
+          "Maschio",
+          "Femmina",
+          "Non binario",
+          "Transgender maschile",
+          "Transgender femminile",
+          "Genere fluido",
+          "Agender",
+          "Bigenero",
+          "Demigenero",
+          "Genderqueer",
+          "Intersex",
+          "Altro"
+        ],
+        textoTermos:
+          "Cliccando su Registrati, accetti i nostri Termini, la Politica sulla privacy e la Politica sui cookie. Potresti ricevere notifiche SMS e puoi annullare l'iscrizione in qualsiasi momento.",
+        jaConta: "Hai già un account?",
+        btnLogin: "Accesso",
+        btnEntrar: "Registrati",
+        contatoTitulo: "Contatto",
+        emailLink: "Email",
+        suporteLink: "Supporto",
+        ajudaLink: "Aiuto",
+        politicaTitulo: "Politiche",
+        privacidadeLink: "Privacy",
+        cookiesLink: "Cookie",
+        termosLink: "Termini di utilizzo",
+        empresaTitulo: "Azienda",
+        sobreLink: "Chi siamo",
+        trabalheLink: "Lavora con noi",
+        canalLink: "Canale riservato",
+        outrosTitulo: "Altro",
+        relatoriosLink: "Report",
+        cuponsLink: "Coupon",
+        regulamentosLink: "Regolamenti"
+      },
+      de: {
+        tituloForm: "Registrieren",
+        placeholders: {
+          nome: "Benutzername",
+          usuario: "E-Mail",
+          senha: "Passwort",
+          confirmar: "Passwort bestätigen"
+        },
+        selectOptions: [
+          "Nicht ausgewählt",
+          "Männlich",
+          "Weiblich",
+          "Nicht-binär",
+          "Transgender männlich",
+          "Transgender weiblich",
+          "Gender Fluid",
+          "Agender",
+          "Bigender",
+          "Demigender",
+          "Genderqueer",
+          "Intersex",
+          "Andere"
+        ],
+        textoTermos:
+          "Indem Sie auf Registrieren klicken, stimmen Sie unseren Bedingungen, Datenschutzrichtlinien und Cookie-Richtlinien zu. Sie können SMS-Benachrichtigungen erhalten und sich jederzeit abmelden.",
+        jaConta: "Haben Sie bereits ein Konto?",
+        btnLogin: "Anmelden",
+        btnEntrar: "Registrieren",
+        contatoTitulo: "Kontakt",
+        emailLink: "E-Mail",
+        suporteLink: "Support",
+        ajudaLink: "Hilfe",
+        politicaTitulo: "Richtlinien",
+        privacidadeLink: "Datenschutz",
+        cookiesLink: "Cookies",
+        termosLink: "Nutzungsbedingungen",
+        empresaTitulo: "Unternehmen",
+        sobreLink: "Über uns",
+        trabalheLink: "Karriere",
+        canalLink: "Vertraulicher Kanal",
+        outrosTitulo: "Andere",
+        relatoriosLink: "Berichte",
+        cuponsLink: "Gutscheine",
+        regulamentosLink: "Regeln"
+      }
+    };
+
+    function mudarIdioma(lang) {
+      const t = traducoes[lang];
+      if (!t) return;
+
+      document.documentElement.lang = lang === 'pt' ? 'pt-BR' : lang;
+
+      document.getElementById("tituloForm").textContent = t.tituloForm;
+
+      document.getElementById("nome").placeholder = t.placeholders.nome;
+      document.getElementById("usuario").placeholder = t.placeholders.usuario;
+      document.getElementById("senha").placeholder = t.placeholders.senha;
+      document.getElementById("confirmar").placeholder = t.placeholders.confirmar;
+
+
+      const select = document.getElementById("problema");
+      for (let i = 0; i < t.selectOptions.length; i++) {
+        select.options[i].text = t.selectOptions[i];
+      }
+
+      document.getElementById("textoTermos").textContent = t.textoTermos;
+      document.getElementById("jaConta").textContent = t.jaConta;
+      document.getElementById("btnLogin").textContent = t.btnLogin;
+      document.getElementById("btnEntrar").textContent = t.btnEntrar;
+
+      document.getElementById("contatoTitulo").textContent = t.contatoTitulo;
+      document.getElementById("emailLink").textContent = t.emailLink;
+      document.getElementById("suporteLink").textContent = t.suporteLink;
+      document.getElementById("ajudaLink").textContent = t.ajudaLink;
+
+      document.getElementById("politicaTitulo").textContent = t.politicaTitulo;
+      document.getElementById("privacidadeLink").textContent = t.privacidadeLink;
+      document.getElementById("cookiesLink").textContent = t.cookiesLink;
+      document.getElementById("termosLink").textContent = t.termosLink;
+
+      document.getElementById("empresaTitulo").textContent = t.empresaTitulo;
+      document.getElementById("sobreLink").textContent = t.sobreLink;
+      document.getElementById("trabalheLink").textContent = t.trabalheLink;
+      document.getElementById("canalLink").textContent = t.canalLink;
+
+      document.getElementById("outrosTitulo").textContent = t.outrosTitulo;
+      document.getElementById("relatoriosLink").textContent = t.relatoriosLink;
+      document.getElementById("cuponsLink").textContent = t.cuponsLink;
+      document.getElementById("regulamentosLink").textContent = t.regulamentosLink;
+    }
+
+
+    document.querySelectorAll('.language-link').forEach(link => {
+      link.addEventListener('click', e => {
+        const lang = e.target.getAttribute('data-lang');
+        mudarIdioma(lang);
+      });
+    });
+
+
+    mudarIdioma('pt');
+  </script>
+</body>
+</html>

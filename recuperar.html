@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projeto - Recuperar Senha</title>
+  <link rel="stylesheet" href="recuperar.css" />
+  <link rel="preconnect" href="poppins.css" />
+  <link rel="shortcut icon" type="image/jpg" href="https://media.discordapp.net/attachments/1343947890464260096/1379439192349741106/image.png?ex=68403e5c&is=683eecdc&hm=7248214fb875f44f350a5a361b0debb9a4209aba9882c1bcf70592573542da36&=&format=webp&quality=lossless&width=291&height=65" />
+</head>
+<body>
+  <div class="recupere-container">
+    <img src="https://media.discordapp.net/attachments/1343947890464260096/1379439192349741106/image.png?ex=68403e5c&is=683eecdc&hm=7248214fb875f44f350a5a361b0debb9a4209aba9882c1bcf70592573542da36&=&format=webp&quality=lossless&width=291&height=65"
+      width="300" height="70" alt="foto" />
+    
+    <form id="loginForm" method="post" action="#">
+      <h2 id="titulo">Digite seu número de telefone</h2>
+      <p id="descricao">Você precisará confirmar este número de celular com um código via SMS ou WhatsApp.</p>
+
+      <div class="numero">
+        <select name="Problema do site" id="problema" required>
+          <option required>Não Selecionado</option>
+          <option required>+1 (US)</option>
+          <option required>+44 (GB)</option>
+          <option required>+49 (DE)</option>
+          <option required>+33 (FR)</option>
+          <option required>+81 (JP)</option>
+          <option required>+55 (BR)</option>
+          <option required>+34 (ES)</option>
+          <option required>+39 (IT)</option>
+          <option required>+86 (CN)</option>
+          <option required>+7 (RU)</option>
+          <option required>+61 (AU)</option>
+          <option required>+91 (IN)</option>
+          <option required>Outro</option>
+        </select>
+        <input type="tel" placeholder="Coloque seu número" id="numero" name="senha" required /><br /><br />
+      </div>
+
+      <h6 id="politica">Utilizamos os endereços de email adicionados aqui para ajudar você a fazer login, proteger nossa comunidade, contabilizar com precisão o número de usuários de nossos serviços e auxiliar você a acessar o Time’sBooks e programas de opt-in, mas não para fins como sugerir amigos ou exibir anúncios. Somente você verá este email em seu perfil.</h6>
+      <button type="button" id="botao">Enviar Código</button>
+    </form>
+  </div>
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-idioma">
+        <h4>Idiomas</h4>
+        <ul>
+          <li><a href="#" data-lang="pt">Português (Brasil)</a></li>
+          <li><a href="#" data-lang="en">English (US)</a></li>
+          <li><a href="#" data-lang="es">Español</a></li>
+          <li><a href="#" data-lang="fr">Français (France)</a></li>
+          <li><a href="#" data-lang="it">Italiano</a></li>
+          <li><a href="#" data-lang="de">Deutsch</a></li>
+        </ul>
+      </div>
+      <div class="footer-coluna">
+        <h4>Contato</h4>
+        <ul>
+          <li><a href="#">E-mail</a></li>
+          <li><a href="#">Suporte</a></li>
+          <li><a href="#">Ajuda</a></li>
+        </ul>
+      </div>
+      <div class="footer-coluna">
+        <h4>Políticas</h4>
+        <ul>
+          <li><a href="#">Privacidade</a></li>
+          <li><a href="#">Cookies</a></li>
+          <li><a href="#">Termos de Uso</a></li>
+        </ul>
+      </div>
+      <div class="footer-coluna">
+        <h4>Empresa</h4>
+        <ul>
+          <li><a href="#">Sobre Nós</a></li>
+          <li><a href="#">Trabalhe Conosco</a></li>
+          <li><a href="#">Canal Confidencial</a></li>
+        </ul>
+      </div>
+      <div class="footer-coluna">
+        <h4>Outros</h4>
+        <ul>
+          <li><a href="#">Relatórios</a></li>
+          <li><a href="#">Cupons</a></li>
+          <li><a href="#">Regulamentos</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript para mudar idioma -->
+  <script>
+    const traducoes = {
+      pt: {
+        titulo: "Digite seu número de telefone",
+        descricao: "Você precisará confirmar este número de celular com um código via SMS ou WhatsApp.",
+        politica: "Utilizamos os endereços de email adicionados aqui para ajudar você a fazer login, proteger nossa comunidade, contabilizar com precisão o número de usuários de nossos serviços e auxiliar você a acessar o Time’sBooks e programas de opt-in, mas não para fins como sugerir amigos ou exibir anúncios. Somente você verá este email em seu perfil.",
+        botao: "Enviar Código"
+      },
+      en: {
+        titulo: "Enter your phone number",
+        descricao: "You will need to confirm this phone number with a code via SMS or WhatsApp.",
+        politica: "We use the email addresses added here to help you log in, protect our community, count the number of users, and help you access Time’sBooks and opt-in programs, but not to suggest friends or show ads. Only you will see this email on your profile.",
+        botao: "Send Code"
+      },
+      es: {
+        titulo: "Introduce tu número de teléfono",
+        descricao: "Necesitarás confirmar este número con un código por SMS o WhatsApp.",
+        politica: "Utilizamos las direcciones de correo electrónico añadidas aquí para ayudarte a iniciar sesión, proteger nuestra comunidad, contar con precisión los usuarios y ayudarte a acceder a Time’sBooks y programas opt-in, pero no para sugerir amigos ni mostrar anuncios. Solo tú verás este correo en tu perfil.",
+        botao: "Enviar código"
+      },
+      fr: {
+        titulo: "Entrez votre numéro de téléphone",
+        descricao: "Vous devrez confirmer ce numéro avec un code par SMS ou WhatsApp.",
+        politica: "Nous utilisons les adresses e-mail ajoutées ici pour vous aider à vous connecter, protéger notre communauté, compter les utilisateurs et vous permettre d'accéder à Time’sBooks et aux programmes d'inscription, mais pas pour suggérer des amis ou afficher des publicités. Vous seul verrez cet e-mail sur votre profil.",
+        botao: "Envoyer le code"
+      },
+      it: {
+        titulo: "Inserisci il tuo numero di telefono",
+        descricao: "Dovrai confermare questo numero con un codice via SMS o WhatsApp.",
+        politica: "Utilizziamo gli indirizzi email aggiunti qui per aiutarti ad accedere, proteggere la nostra comunità, contare con precisione gli utenti e aiutarti ad accedere a Time’sBooks e ai programmi opt-in, ma non per suggerire amici o mostrare annunci. Solo tu vedrai questa email nel tuo profilo.",
+        botao: "Invia il codice"
+      },
+      de: {
+        titulo: "Geben Sie Ihre Telefonnummer ein",
+        descricao: "Sie müssen diese Nummer mit einem Code per SMS oder WhatsApp bestätigen.",
+        politica: "Wir verwenden die hier hinzugefügten E-Mail-Adressen, um Ihnen beim Einloggen zu helfen, unsere Community zu schützen, Nutzer genau zu zählen und Ihnen Zugang zu Time’sBooks und Opt-in-Programmen zu ermöglichen, aber nicht, um Freunde vorzuschlagen oder Werbung anzuzeigen. Nur Sie sehen diese E-Mail in Ihrem Profil.",
+        botao: "Code senden"
+      }
+    };
+
+    document.querySelectorAll('.footer-idioma a').forEach(link => {
+      link.addEventListener('click', function (e) {
+        e.preventDefault();
+        const lang = this.getAttribute('data-lang');
+        const t = traducoes[lang];
+        if (t) {
+          document.getElementById('titulo').innerText = t.titulo;
+          document.getElementById('descricao').innerText = t.descricao;
+          document.getElementById('politica').innerText = t.politica;
+          document.getElementById('botao').innerText = t.botao;
+        }
+      });
+    });
+  </script>
+</body>
+</html>
