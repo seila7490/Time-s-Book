@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title id="tituloPagina">Pc-Feed inicial</title>
+  <link rel="stylesheet" href="index.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+  <link rel="shortcut icon" type="image/png" href="https://media.discordapp.net/attachments/1343947890464260096/1379439192349741106/image.png" />
+</head>
+<body>
+
+  <header>
+    <div class="menu">
+      <img class="logo" id="logoImg" src="Imagens/logo.png.webp" alt="logo" />
+      <a href="#"><img class="icone" id="casaImg" src="Imagens/casa.png.webp" alt="casa" /></a>
+      <a href="pesquisar.html"><img class="icone" id="lupaImg" src="Imagens/lupa.png.webp" alt="lupa" /></a>
+      <a href="estante.html"><img class="icone" id="livroImg" src="Imagens/livro.png.webp" alt="livro" /></a>
+      <a href="#"><img class="icone" id="perfilImg" src="Imagens/perfil.png.webp" alt="perfil" /></a>
+
+      <div class="menuzin">
+        <a href="#"><img class="icone" id="chatImg" src="Imagens/chat.webp" alt="chat" /></a>
+        <a href="#"><img class="icone" id="fogoImg" src="Imagens/fogo.webp" alt="fogo" /></a>
+        <a href="#"><img class="tres" id="menuImg" src="Imagens/tresrisco.webp" alt="tres" /></a>
+      </div>
+    </div>
+  </header>
+
+  <section>
+    <div class="sub">
+      <div class="geral">
+        <a href="#"><img src="Imagens/geral.png.webp" alt="geral" id="geral" />
+          <p id="geralTexto">Geral</p>
+        </a>
+      </div>
+      <div class="seguindo">
+        <a href="#"><img src="Imagens/seguindo.png.webp" alt="Seguindo" id="seguindoImg" />
+          <p id="seguindoTexto">Seguindo</p>
+        </a>
+      </div>
+      <div class="amigos">
+        <a href="#"><img src="Imagens/amigos.png.webp" alt="Amigos" id="amigosImg" />
+          <p id="amigosTexto">Amigos</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <div class="container">
+    <div class="conteudo-principal">
+      <div class="perfil">
+        <img src="Imagens/perfil.webp" alt="perfil" id="perfilImgGrande" width="140px" />
+        <h2 id="perfilNome">@readingwgabi</h2>
+        <p id="perfilTempo">há 5 minutos</p>
+      </div>
+
+      <div class="mensagem">
+        <h4 id="mensagemTexto">MANW AH NÃO EU NAO ACEITO ISSO</h4>
+      </div>
+
+      <div class="livro">
+        <div class="post-box">
+          <img src="Imagens/Livro1.webp" width="150" alt="Livro" id="livroImg" class="imagem" />
+          <div class="post">
+            <img src="Imagens/timer.webp" width="50" height="50" class="timer-icon" alt="timer" id="timerImg" />
+            <p class="timer-text" id="historicoTexto">Fez histórico de leitura</p>
+            <div class="text">
+              <h4 class="texto" id="tituloLivro">É assim que acaba</h4>
+              <h5 id="autorLivro">Colleen Hoover</h5>
+              <img src="Imagens/barra.webp" width="350" alt="barra de progresso" id="barraImg" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="interagir">
+        <img src="Imagens/coração.webp" width="40" height="40" class="imagen" alt="curtir" id="curtirImg" />
+        <p class="curtidas" id="curtidasTexto">Curtidas</p>
+        <img src="Imagens/comentario.webp" width="40" height="40" class="imagen" alt="comentário" id="comentarioImg" />
+        <p class="comentario" id="comentariosTexto">Comentários</p>
+        <img src="Imagens/trespontos.webp" width="40" height="40" class="tres" alt="mais opções" id="maisOpcoesImg" />
+      </div>
+
+      <div class="perfil2">
+        <img src="Imagens/perfilsteezp.webp" width="150" class="perfil3" alt="perfil steeszps" id="perfilSteezpImg" />
+        <h3 id="perfilSteezpNome">@steeszps</h3>
+        <p id="perfilSteezpTempo">há 32 minutos</p>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-idioma">
+        <h4 id="idiomasTitulo">Idiomas</h4>
+        <ul>
+          <li><a href="#" data-lang="pt">Português (Brasil)</a></li>
+          <li><a href="#" data-lang="en">English (US)</a></li>
+          <li><a href="#" data-lang="es">Español</a></li>
+          <li><a href="#" data-lang="fr">Français (France)</a></li>
+          <li><a href="#" data-lang="it">Italiano</a></li>
+          <li><a href="#" data-lang="de">Deutsch</a></li>
+        </ul>
+      </div>
+      <div class="footer-coluna">
+        <h4 id="contatoTitulo">Contato</h4>
+        <ul>
+          <li><a href="#" id="emailLink">E-mail</a></li>
+          <li><a href="#" id="suporteLink">Suporte</a></li>
+          <li><a href="#" id="ajudaLink">Ajuda</a></li>
+        </ul>
+      </div>
+      <div class="footer-coluna">
+        <h4 id="politicaTitulo">Políticas</h4>
+        <ul>
+          <li><a href="#" id="privacidadeLink">Privacidade</a></li>
+          <li><a href="#" id="cookiesLink">Cookies</a></li>
+          <li><a href="#" id="termosLink">Termos de Uso</a></li>
+        </ul>
+      </div>
+      <div class="footer-coluna">
+        <h4 id="empresaTitulo">Empresa</h4>
+        <ul>
+          <li><a href="#" id="sobreLink">Sobre Nós</a></li>
+          <li><a href="#" id="trabalheLink">Trabalhe Conosco</a></li>
+          <li><a href="#" id="canalLink">Canal Confidencial</a></li>
+        </ul>
+      </div>
+      <div class="footer-coluna">
+        <h4 id="outrosTitulo">Outros</h4>
+        <ul>
+          <li><a href="#" id="relatoriosLink">Relatórios</a></li>
+          <li><a href="#" id="cuponsLink">Cupons</a></li>
+          <li><a href="#" id="regulamentosLink">Regulamentos</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    let idiomaAtual = 'pt';
+
+    const traducoes = {
+      pt: {
+        tituloPagina: 'Pc-Feed inicial',
+       
+        logoImg: 'logo',
+        casaImg: 'casa',
+        lupaImg: 'lupa',
+        livroImg: 'livro',
+        perfilImg: 'perfil',
+        chatImg: 'chat',
+        fogoImg: 'fogo',
+        menuImg: 'menu',
+
+        
+        geralImg: 'Geral',
+        geralTexto: 'Geral',
+        seguindoImg: 'Seguindo',
+        seguindoTexto: 'Seguindo',
+        amigosImg: 'Amigos',
+        amigosTexto: 'Amigos',
+
+        // perfil principal
+        perfilImgGrande: 'perfil',
+        perfilNome: '@readingwgabi',
+        perfilTempo: 'há 5 minutos',
+
+        mensagemTexto: 'MANW AH NÃO EU NAO ACEITO ISSO',
+
+        livroImg: 'Livro',
+        timerImg: 'timer',
+        historicoTexto: 'Fez histórico de leitura',
+        tituloLivro: 'É assim que acaba',
+        autorLivro: 'Colleen Hoover',
+        barraImg: 'barra de progresso',
+
+        curtirImg: 'curtir',
+        curtidasTexto: 'Curtidas',
+        comentarioImg: 'comentário',
+        comentariosTexto: 'Comentários',
+        maisOpcoesImg: 'mais opções',
+
+        perfilSteezpImg: 'perfil steeszps',
+        perfilSteezpNome: '@steeszps',
+        perfilSteezpTempo: 'há 32 minutos',
+
+        idiomasTitulo: 'Idiomas',
+        contatoTitulo: 'Contato',
+        emailLink: 'E-mail',
+        suporteLink: 'Suporte',
+        ajudaLink: 'Ajuda',
+        politicaTitulo: 'Políticas',
+        privacidadeLink: 'Privacidade',
+        cookiesLink: 'Cookies',
+        termosLink: 'Termos de Uso',
+        empresaTitulo: 'Empresa',
+        sobreLink: 'Sobre Nós',
+        trabalheLink: 'Trabalhe Conosco',
+        canalLink: 'Canal Confidencial',
+        outrosTitulo: 'Outros',
+        relatoriosLink: 'Relatórios',
+        cuponsLink: 'Cupons',
+        regulamentosLink: 'Regulamentos',
+      },
+      en: {
+        tituloPagina: 'Pc-Feed Home',
+        // header alt
+        logoImg: 'logo',
+        casaImg: 'home',
+        lupaImg: 'search',
+        livroImg: 'book',
+        perfilImg: 'profile',
+        chatImg: 'chat',
+        fogoImg: 'fire',
+        menuImg: 'menu',
+
+        // section
+        geralImg: 'General',
+        geralTexto: 'General',
+        seguindoImg: 'Following',
+        seguindoTexto: 'Following',
+        amigosImg: 'Friends',
+        amigosTexto: 'Friends',
+
+        // perfil principal
+        perfilImgGrande: 'profile',
+        perfilNome: '@readingwgabi',
+        perfilTempo: '5 minutes ago',
+
+        mensagemTexto: "MANW AH NO I DON'T ACCEPT THIS",
+
+        livroImg: 'Book',
+        timerImg: 'timer',
+        historicoTexto: 'Created reading history',
+        tituloLivro: 'It Ends With Us',
+        autorLivro: 'Colleen Hoover',
+        barraImg: 'progress bar',
+
+        curtirImg: 'like',
+        curtidasTexto: 'Likes',
+        comentarioImg: 'comment',
+        comentariosTexto: 'Comments',
+        maisOpcoesImg: 'more options',
+
+        perfilSteezpImg: 'profile steeszps',
+        perfilSteezpNome: '@steeszps',
+        perfilSteezpTempo: '32 minutes ago',
+
+        idiomasTitulo: 'Languages',
+        contatoTitulo: 'Contact',
+        emailLink: 'Email',
+        suporteLink: 'Support',
+        ajudaLink: 'Help',
+        politicaTitulo: 'Policies',
+        privacidadeLink: 'Privacy',
+        cookiesLink: 'Cookies',
+        termosLink: 'Terms of Use',
+        empresaTitulo: 'Company',
+        sobreLink: 'About Us',
+        trabalheLink: 'Careers',
+        canalLink: 'Confidential Channel',
+        outrosTitulo: 'Others',
+        relatoriosLink: 'Reports',
+        cuponsLink: 'Coupons',
+        regulamentosLink: 'Regulations',
+      },
+      es: {
+        tituloPagina: 'Pc-Feed Inicio',
+        // header alt
+        logoImg: 'logo',
+        casaImg: 'inicio',
+        lupaImg: 'buscar',
+        livroImg: 'libro',
+        perfilImg: 'perfil',
+        chatImg: 'chat',
+        fogoImg: 'fuego',
+        menuImg: 'menú',
+
+        // section
+        geralImg: 'General',
+        geralTexto: 'General',
+        seguindoImg: 'Siguiendo',
+        seguindoTexto: 'Siguiendo',
+        amigosImg: 'Amigos',
+        amigosTexto: 'Amigos',
+
+        // perfil principal
+        perfilImgGrande: 'perfil',
+        perfilNome: '@readingwgabi',
+        perfilTempo: 'hace 5 minutos',
+
+        mensagemTexto: 'MANW AH NO ACEPTÓ ESTO',
+
+        livroImg: 'Libro',
+        timerImg: 'temporizador',
+        historicoTexto: 'Creó historial de lectura',
+        tituloLivro: 'Así es como termina',
+        autorLivro: 'Colleen Hoover',
+        barraImg: 'barra de progreso',
+
+        curtirImg: 'me gusta',
+        curtidasTexto: 'Me gusta',
+        comentarioImg: 'comentario',
+        comentariosTexto: 'Comentarios',
+        maisOpcoesImg: 'más opciones',
+
+        perfilSteezpImg: 'perfil steeszps',
+        perfilSteezpNome: '@steeszps',
+        perfilSteezpTempo: 'hace 32 minutos',
+
+        idiomasTitulo: 'Idiomas',
+        contatoTitulo: 'Contacto',
+        emailLink: 'Correo electrónico',
+        suporteLink: 'Soporte',
+        ajudaLink: 'Ayuda',
+        politicaTitulo: 'Políticas',
+        privacidadeLink: 'Privacidad',
+        cookiesLink: 'Cookies',
+        termosLink: 'Términos de Uso',
+        empresaTitulo: 'Empresa',
+        sobreLink: 'Sobre Nosotros',
+        trabalheLink: 'Trabaja con Nosotros',
+        canalLink: 'Canal Confidencial',
+        outrosTitulo: 'Otros',
+        relatoriosLink: 'Informes',
+        cuponsLink: 'Cupones',
+        regulamentosLink: 'Regulaciones',
+      },
+      fr: {
+        tituloPagina: 'Accueil Pc-Feed',
+        // header alt
+        logoImg: 'logo',
+        casaImg: 'accueil',
+        lupaImg: 'recherche',
+        livroImg: 'livre',
+        perfilImg: 'profil',
+        chatImg: 'chat',
+        fogoImg: 'feu',
+        menuImg: 'menu',
+
+        // section
+        geralImg: 'Général',
+        geralTexto: 'Général',
+        seguindoImg: 'Abonnements',
+        seguindoTexto: 'Abonnements',
+        amigosImg: 'Amis',
+        amigosTexto: 'Amis',
+
+        // perfil principal
+        perfilImgGrande: 'profil',
+        perfilNome: '@readingwgabi',
+        perfilTempo: 'il y a 5 minutes',
+
+        mensagemTexto: "MANW AH NON JE N'ACCEPTE PAS ÇA",
+
+        livroImg: 'Livre',
+        timerImg: 'minuteur',
+        historicoTexto: 'A créé un historique de lecture',
+        tituloLivro: 'C’est comme ça que ça finit',
+        autorLivro: 'Colleen Hoover',
+        barraImg: 'barre de progression',
+
+        curtirImg: 'aimer',
+        curtidasTexto: 'Aimes',
+        comentarioImg: 'commentaire',
+        comentariosTexto: 'Commentaires',
+        maisOpcoesImg: 'plus d\'options',
+
+        perfilSteezpImg: 'profil steeszps',
+        perfilSteezpNome: '@steeszps',
+        perfilSteezpTempo: 'il y a 32 minutes',
+
+        idiomasTitulo: 'Langues',
+        contatoTitulo: 'Contact',
+        emailLink: 'Email',
+        suporteLink: 'Support',
+        ajudaLink: 'Aide',
+        politicaTitulo: 'Politiques',
+        privacidadeLink: 'Confidentialité',
+        cookiesLink: 'Cookies',
+        termosLink: "Conditions d'utilisation",
+        empresaTitulo: 'Entreprise',
+        sobreLink: 'À propos de nous',
+        trabalheLink: 'Rejoignez-nous',
+        canalLink: 'Canal confidentiel',
+        outrosTitulo: 'Autres',
+        relatoriosLink: 'Rapports',
+        cuponsLink: 'Coupons',
+        regulamentosLink: 'Règlements',
+      },
+      it: {
+        tituloPagina: 'Pc-Feed Iniziale',
+        logoImg: 'logo',
+        casaImg: 'casa',
+        lupaImg: 'cerca',
+        livroImg: 'libro',
+        perfilImg: 'profilo',
+        chatImg: 'chat',
+        fogoImg: 'fuoco',
+        menuImg: 'menu',
+
+        geralImg: 'Generale',
+        geralTexto: 'Generale',
+        seguindoImg: 'Seguendo',
+        seguindoTexto: 'Seguendo',
+        amigosImg: 'Amici',
+        amigosTexto: 'Amici',
+
+        
+        perfilImgGrande: 'profilo',
+        perfilNome: '@readingwgabi',
+        perfilTempo: '5 minuti fa',
+
+        mensagemTexto: 'MANW AH NO NON ACCETTO QUESTO',
+
+        livroImg: 'Libro',
+        timerImg: 'timer',
+        historicoTexto: 'Ha creato la cronologia di lettura',
+        tituloLivro: 'È così che finisce',
+        autorLivro: 'Colleen Hoover',
+        barraImg: 'barra di progresso',
+
+        curtirImg: 'mi piace',
+        curtidasTexto: 'Mi piace',
+        comentarioImg: 'commento',
+        comentariosTexto: 'Commenti',
+        maisOpcoesImg: 'più opzioni',
+
+        perfilSteezpImg: 'profilo steeszps',
+        perfilSteezpNome: '@steeszps',
+        perfilSteezpTempo: '32 minuti fa',
+
+        idiomasTitulo: 'Lingue',
+        contatoTitulo: 'Contatto',
+        emailLink: 'Email',
+        suporteLink: 'Supporto',
+        ajudaLink: 'Aiuto',
+        politicaTitulo: 'Politiche',
+        privacidadeLink: 'Privacy',
+        cookiesLink: 'Cookie',
+        termosLink: "Termini di utilizzo",
+        empresaTitulo: 'Azienda',
+        sobreLink: 'Chi siamo',
+        trabalheLink: 'Lavora con noi',
+        canalLink: 'Canale confidenziale',
+        outrosTitulo: 'Altro',
+        relatoriosLink: 'Rapporti',
+        cuponsLink: 'Coupon',
+        regulamentosLink: 'Regolamenti',
+      },
+      de: {
+        tituloPagina: 'Pc-Feed Startseite',
+        
+        logoImg: 'Logo',
+        casaImg: 'Startseite',
+        lupaImg: 'Suche',
+        livroImg: 'Buch',
+        perfilImg: 'Profil',
+        chatImg: 'Chat',
+        fogoImg: 'Feuer',
+        menuImg: 'Menü',
+
+        
+        geralImg: 'Allgemein',
+        geralTexto: 'Allgemein',
+        seguindoImg: 'Folgen',
+        seguindoTexto: 'Folgen',
+        amigosImg: 'Freunde',
+        amigosTexto: 'Freunde',
+
+        
+        perfilImgGrande: 'Profil',
+        perfilNome: '@readingwgabi',
+        perfilTempo: 'vor 5 Minuten',
+
+        mensagemTexto: 'MANW AH NEIN ICH AKZEPTIERE DAS NICHT',
+
+        livroImg: 'Buch',
+        timerImg: 'Timer',
+        historicoTexto: 'Hat Lesegeschichte erstellt',
+        tituloLivro: 'So endet es',
+        autorLivro: 'Colleen Hoover',
+        barraImg: 'Fortschrittsbalken',
+
+        curtirImg: 'Gefällt mir',
+        curtidasTexto: 'Gefällt mir',
+        comentarioImg: 'Kommentar',
+        comentariosTexto: 'Kommentare',
+        maisOpcoesImg: 'mehr Optionen',
+
+        perfilSteezpImg: 'Profil steeszps',
+        perfilSteezpNome: '@steeszps',
+        perfilSteezpTempo: 'vor 32 Minuten',
+
+        idiomasTitulo: 'Sprachen',
+        contatoTitulo: 'Kontakt',
+        emailLink: 'E-Mail',
+        suporteLink: 'Support',
+        ajudaLink: 'Hilfe',
+        politicaTitulo: 'Richtlinien',
+        privacidadeLink: 'Datenschutz',
+        cookiesLink: 'Cookies',
+        termosLink: 'Nutzungsbedingungen',
+        empresaTitulo: 'Unternehmen',
+        sobreLink: 'Über uns',
+        trabalheLink: 'Karriere',
+        canalLink: 'Vertraulicher Kanal',
+        outrosTitulo: 'Andere',
+        relatoriosLink: 'Berichte',
+        cuponsLink: 'Gutscheine',
+        regulamentosLink: 'Vorschriften',
+      }
+    };
+
+    function mudarIdioma(lang) {
+      if (!traducoes[lang]) return;
+
+      idiomaAtual = lang;
+
+      for (const id in traducoes[lang]) {
+        const el = document.getElementById(id);
+        if (el) {
+          if(el.tagName.toLowerCase() === 'img') {
+            el.alt = traducoes[lang][id];
+          } else if(el.tagName.toLowerCase() === 'title') {
+            document.title = traducoes[lang][id];
+          } else {
+            el.textContent = traducoes[lang][id];
+          }
+        }
+      }
+    }
+
+  
+    document.querySelectorAll('.footer-idioma a').forEach(link => {
+      link.addEventListener('click', e => {
+        e.preventDefault();
+        const lang = link.getAttribute('data-lang');
+        mudarIdioma(lang);
+      });
+    });
+  </script>
+</body>
+</html>
